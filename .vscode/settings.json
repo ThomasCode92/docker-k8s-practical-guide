@@ -3,7 +3,8 @@
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "material-icon-theme.folders.associations": {
-    "core-building-blocks": "docker"
+    "core-building-blocks": "docker",
+    "node-app": "node"
   },
 
   // IDE Config
