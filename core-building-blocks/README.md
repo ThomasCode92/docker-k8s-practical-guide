@@ -12,3 +12,15 @@
 **Containers:** The running "unit of software"
 
 ![docker_engine](./docs/image-container.excalidraw.png)
+
+## Commands
+
+**Use and Run an Image**<br />
+To start the NodeJS image from [Docker Hub](https://hub.docker.com/_/node), use one of the following commands:
+
+```bash
+  docker run node
+  docker run -it node   # Run with interactive shell
+
+  docker ps -a          # List all processes
+```
