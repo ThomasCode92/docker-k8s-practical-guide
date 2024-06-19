@@ -51,6 +51,11 @@ To stop a running container, follow these steps:
 **Interactive Mode**<br />
 To start a container in interactive mode, use the '_-it_' flag. This flag allows you to interact with the container’s terminal. Example command: `docker run -it <Container_Name_or_ID>`
 
+**Deleting Images & Containers**<br />
+Delete a stopped container: `docker rm <Container_Name_or_ID>`.<br />
+Delete an unused image: `docker rmi <Image_Name_or_ID>`.<br />
+Delete all unused images: `docker image prune`.<br />
+
 **More Useful Commands**
 | Images | Command or Flag | Containers | Command or Flag |
 | ------------------- | -------------------------- | ------------------------------- | ------------------------- |
