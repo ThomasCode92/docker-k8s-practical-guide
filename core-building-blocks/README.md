@@ -30,3 +30,7 @@ Follow these steps to build an image from a Dockerfile and run a container from 
 
 1. Build the Docker Image: `docker build .`<br />
    Ths will build an image from a Dockerfile and output an `ImageID` for the created image.<br />
+2. Run a Container from the Built Image: `docker run -p 8000:800 <ImageID>`<br />
+   Use the `ImageID` to run a container from the built image and map port 8000 on the host to port 80 in the container.
+
+This process will create and run a container based on the specifications provided in a Dockerfile, and it will map port 8000 on the local machine to port 80 in the container.
