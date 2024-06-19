@@ -13,9 +13,9 @@
 
 ![docker_engine](./docs/image-container.excalidraw.png)
 
-## Commands
+## Running Docker Images
 
-**Use and Run an Image**<br />
+**Using a Prebuilt Image**<br />
 To start the NodeJS image from [Docker Hub](https://hub.docker.com/_/node), use one of the following commands:
 
 ```bash
@@ -24,3 +24,9 @@ To start the NodeJS image from [Docker Hub](https://hub.docker.com/_/node), use 
 
   docker ps -a          # List all processes
 ```
+
+**Building and Running a Custom Image**<br />
+Follow these steps to build an image from a Dockerfile and run a container from it:
+
+1. Build the Docker Image: `docker build .`<br />
+   Ths will build an image from a Dockerfile and output an `ImageID` for the created image.<br />

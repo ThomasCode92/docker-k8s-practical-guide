@@ -19,5 +19,10 @@
 
   // JavaScript Specific Config
   "javascript.inlayHints.parameterNames.enabled": "all",
-  "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false
+  "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+
+  // Files Specific Config
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  }
 }
