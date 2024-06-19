@@ -48,6 +48,9 @@ To stop a running container, follow these steps:
 5. Identify the desired container and copy its name or ID.
 6. Stop the container with command: `docker stop <Container_Name_or_ID>`
 
+**Interactive Mode**<br />
+To start a container in interactive mode, use the '_-it_' flag. This flag allows you to interact with the container’s terminal. Example command: `docker run -it <Container_Name_or_ID>`
+
 **More Useful Commands**
 | Images | Command or Flag | Containers | Command or Flag |
 | ------------------- | -------------------------- | ------------------------------- | ------------------------- |
