@@ -68,3 +68,8 @@ To start a container in interactive mode, use the _-it_ flag. This flag allows y
 | Can be **removed** | _docker rmi, docker prune_ | Can be **removed** | _docker rm_ |
 
 Add `--help`to see all options.
+
+## More about Images
+
+**Understanding Image Tags**<br />
+<img src="./docs/image-tag.excalidraw.png" />
