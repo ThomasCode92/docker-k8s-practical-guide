@@ -82,6 +82,9 @@ To create an image and push it to a personal Docker Hub account, follow these st
    docker build -t <ImageName> .
    docker tag <ImageName> <UserName>/<ImageName>
    docker push <UserName>/<ImageName>
+
+    # To download an image
+   docker pull <UserName>/<ImageName>
 ```
 
 Replace `<UserName>` with the Docker Hub username and `<ImageName>` with the desired name for the image.
