@@ -35,7 +35,7 @@ This process will create and run a container based on the specifications provide
 
 ## Managing Images & Containers
 
-**Starting a stopped Container**<br />
+**Starting and Stopping Containers**<br />
 To start a stopped container, follow these steps:
 
 1. List all containers, including stopped ones, using `docker ps -a`.
@@ -44,17 +44,20 @@ To start a stopped container, follow these steps:
 
 To stop a running container, follow these steps:
 
-4. List all running containers using: `docker ps`.
-5. Identify the desired container and copy its name or ID.
-6. Stop the container with command: `docker stop <Container_Name_or_ID>`
+1. List all running containers using: `docker ps`.
+2. Identify the desired container and copy its name or ID.
+3. Stop the container with command: `docker stop <Container_Name_or_ID>`
+
+When a container is started with the _--rm_ flag, it will be automatically removed once it stops.
 
 **Interactive Mode**<br />
-To start a container in interactive mode, use the '_-it_' flag. This flag allows you to interact with the container’s terminal. Example command: `docker run -it <Container_Name_or_ID>`
+To start a container in interactive mode, use the _-it_ flag. This flag allows you to interact with the container’s terminal. Example command: `docker run -it <Container_Name_or_ID>`
 
 **Deleting Images & Containers**<br />
-Delete a stopped container: `docker rm <Container_Name_or_ID>`.<br />
-Delete an unused image: `docker rmi <Image_Name_or_ID>`.<br />
-Delete all unused images: `docker image prune`.<br />
+
+- Delete a stopped container: `docker rm <Container_Name_or_ID>`.
+- Delete an unused image: `docker rmi <Image_Name_or_ID>`.
+- Delete all unused images: `docker image prune`.
 
 **More Useful Commands**
 | Images | Command or Flag | Containers | Command or Flag |
