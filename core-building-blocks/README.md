@@ -71,6 +71,9 @@ Add `--help`to see all options.
 
 ## More about Images
 
+**Images and Image Layers**
+<img src="./docs/layers.excalidraw.png" />
+
 **Understanding Image Tags**<br />
 <img src="./docs/image-tag.excalidraw.png" />
 
