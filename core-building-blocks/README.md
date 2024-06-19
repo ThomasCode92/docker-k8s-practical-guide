@@ -21,8 +21,6 @@ To start the NodeJS image from [Docker Hub](https://hub.docker.com/_/node), use 
 ```bash
   docker run node
   docker run -it node   # Run with interactive shell
-
-  docker ps -a          # List all processes
 ```
 
 **Building and Running a Custom Image**<br />
@@ -34,3 +32,14 @@ Follow these steps to build an image from a Dockerfile and run a container from 
    Use the `ImageID` to run a container from the built image and map port 8000 on the host to port 80 in the container.
 
 This process will create and run a container based on the specifications provided in a Dockerfile, and it will map port 8000 on the local machine to port 80 in the container.
+
+## Managing Images & Containers
+
+| Images              | Command or Flag            | Containers                      | Command or Flag           |
+| ------------------- | -------------------------- | ------------------------------- | ------------------------- |
+| Can be **tagged**   | _-t, docker tag_           | Can be **named**                | _--name_                  |
+| Can be **listed**   | _docker images_            | Can be **configured in detail** | see _--help_              |
+| Can be **analyzed** | _docker image inspect_     | Can be **listed**               | _docker ps, docker ps -a_ |
+| Can be **removed**  | _docker rmi, docker prune_ | Can be **removed**              | _docker rm_               |
+
+Add `--help`to see all options.
