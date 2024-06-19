@@ -35,11 +35,25 @@ This process will create and run a container based on the specifications provide
 
 ## Managing Images & Containers
 
-| Images              | Command or Flag            | Containers                      | Command or Flag           |
+**Starting a stopped Container**<br />
+To start a stopped container, follow these steps:
+
+1. List all containers, including stopped ones, using `docker ps -a`.
+2. Identify the desired container and copy its name or ID.
+3. Start the container with the command: `docker start <Container_Name_or_ID>`.
+
+To stop a running container, follow these steps:
+
+4. List all running containers using: `docker ps`.
+5. Identify the desired container and copy its name or ID.
+6. Stop the container with command: `docker stop <Container_Name_or_ID>`
+
+**More Useful Commands**
+| Images | Command or Flag | Containers | Command or Flag |
 | ------------------- | -------------------------- | ------------------------------- | ------------------------- |
-| Can be **tagged**   | _-t, docker tag_           | Can be **named**                | _--name_                  |
-| Can be **listed**   | _docker images_            | Can be **configured in detail** | see _--help_              |
-| Can be **analyzed** | _docker image inspect_     | Can be **listed**               | _docker ps, docker ps -a_ |
-| Can be **removed**  | _docker rmi, docker prune_ | Can be **removed**              | _docker rm_               |
+| Can be **tagged** | _-t, docker tag_ | Can be **named** | _--name_ |
+| Can be **listed** | _docker images_ | Can be **configured in detail** | see _--help_ |
+| Can be **analyzed** | _docker image inspect_ | Can be **listed** | _docker ps, docker ps -a_ |
+| Can be **removed** | _docker rmi, docker prune_ | Can be **removed** | _docker rm_ |
 
 Add `--help`to see all options.
