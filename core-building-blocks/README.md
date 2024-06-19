@@ -73,3 +73,15 @@ Add `--help`to see all options.
 
 **Understanding Image Tags**<br />
 <img src="./docs/image-tag.excalidraw.png" />
+
+**Pushing Images to Docker Hub**<br />
+To create an image and push it to a personal Docker Hub account, follow these steps. First, create an account if one does not exist, then use the username in the commands below:
+
+```bash
+   docker login # log in to Docker Hub
+   docker build -t <ImageName> .
+   docker tag <ImageName> <UserName>/<ImageName>
+   docker push <UserName>/<ImageName>
+```
+
+Replace `<UserName>` with the Docker Hub username and `<ImageName>` with the desired name for the image.
