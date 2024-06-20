@@ -37,18 +37,16 @@ A container can write data into a volume and read data from it.
       <td></td>
     </tr>
     <tr>
-      <td colspan=2>Docker sets up a folder/ path on the host machine, exact location is unknown.<br />Managed via <em>docker volume</em> commands</td>
-      <td></td>      
+      <td colspan=2>Docker sets up a folder/ path on the host machine, exact location is unknown. Managed via <em>docker volume</em> commands</td>
+      <td>Predefined folder/ path on<br />the host machine.</td>      
     </tr>
     <tr>
       <td colspan=3>A defined path in the container is mapped to the created volume/ mount. For example: <em>/some-path</em> on the hosting machine is mapped to <em>/app/data</em>.</td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td></td>
-      <td>Great for data which should be persistent<br />but which you don’t need to edit directly.</td>
-      <td></td>
+      <td>Great for data which should be persistent but which you don’t need to edit directly.</td>
+      <td>Great for persistent, editable data. <em>(e.g. source code)</em>.</td>
     </tr>
   </tbody>
 </table>
