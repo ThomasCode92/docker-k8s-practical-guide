@@ -11,4 +11,4 @@ Learn Docker, Docker Compose, Multi-Container Projects, Deployment and all about
 **Table of Content**
 | Module | Description | Resources |
 | ---| --- | --- |
-| Images & Containers | The Core Building Blocks | [Folder](./images-containers)<br/> [GitHub](https://github.com/ThomasCode92/docker-k8s-practical-guide/tree/core-building-blocks/core-building-blocks) |
+| Images & Containers | The Core Building Blocks | [Folder](./images-containers) & [GitHub Commits](https://github.com/ThomasCode92/docker-k8s-practical-guide/commits/images-containers/)<br />[Cheat sheet](./images-containers/docs/cheat-sheet.pdf) |
