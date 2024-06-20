@@ -7,3 +7,8 @@ Learn Docker, Docker Compose, Multi-Container Projects, Deployment and all about
 ⭐ Comprehensive resource for understanding and implementing containerization and orchestration using Docker and Kubernetes.<br />
 🔍 Practical examples and hands-on projects for solidifying the concepts and tools required for modern DevOps practices.<br />
 🚀 Develop, deploy, and scale applications with Docker and Kubernetes!
+
+**Table of Content**
+| Module | Description | Resources |
+| ---| --- | --- |
+| Images & Containers | The Core Building Blocks | [Folder](./images-containers)<br/> [GitHub](https://github.com/ThomasCode92/docker-k8s-practical-guide/tree/core-building-blocks/core-building-blocks) |

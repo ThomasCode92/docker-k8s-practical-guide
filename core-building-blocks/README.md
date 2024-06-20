@@ -67,18 +67,11 @@ To start a container in interactive mode, use the _-it_ flag. This flag allows y
 | Can be **analyzed** | _docker image inspect_ | Can be **listed** | _docker ps, docker ps -a_ |
 | Can be **removed** | _docker rmi, docker prune_ | Can be **removed** | _docker rm_ |
 
-Add `--help`to see all options.
+Add `--help`to see all options. A more complete list of commands can be found in [this sheet sheet](./docs/sheet-sheet.pdf).
 
-## More about Images
+## Docker Hub
 
-**Images and Image Layers**
-<img src="./docs/layers.excalidraw.png" />
-
-**Understanding Image Tags**<br />
-<img src="./docs/image-tag.excalidraw.png" />
-
-**Pushing Images to Docker Hub**<br />
-To create an image and push it to a personal Docker Hub account, follow these steps. First, create an account if one does not exist, then use the username in the commands below:
+To create an image and push it to a personal [Docker Hub](https://hub.docker.com/) account, follow these steps. First, create an account if one does not exist, then use the username in the commands below:
 
 ```bash
    docker login # log in to Docker Hub
@@ -91,3 +84,11 @@ To create an image and push it to a personal Docker Hub account, follow these st
 ```
 
 Replace `<UserName>` with the Docker Hub username and `<ImageName>` with the desired name for the image.
+
+## More about Images
+
+**Image Layers**
+<img src="./docs/layers.excalidraw.png" />
+
+**Understanding Image Tags**<br />
+<img src="./docs/image-tag.excalidraw.png" />
