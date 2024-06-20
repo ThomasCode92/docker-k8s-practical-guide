@@ -3,6 +3,7 @@
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
   "material-icon-theme.folders.associations": {
+    "data-volumes": "docker",
     "images-containers": "docker",
     "node-app": "node",
     "python-app": "python"
