@@ -2,6 +2,11 @@
   // Extensions
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.codeLens.authors.enabled": false,
+  "material-icon-theme.folders.associations": {
+    "images-containers": "docker",
+    "node-app": "node",
+    "python-app": "python"
+  },
 
   // IDE Config
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -15,5 +20,10 @@
 
   // JavaScript Specific Config
   "javascript.inlayHints.parameterNames.enabled": "all",
-  "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false
+  "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": false,
+
+  // Files Specific Config
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  }
 }
