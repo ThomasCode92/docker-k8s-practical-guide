@@ -50,3 +50,6 @@ A container can write data into a volume and read data from it.
     </tr>
   </tbody>
 </table>
+
+**Volume Interactions**<br />
+![interactions](./docs//interactions.excalidraw.png)
