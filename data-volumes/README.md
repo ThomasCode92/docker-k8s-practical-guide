@@ -71,3 +71,11 @@ A container can write data into a volume and read data from it.
   - Survives container shutdown / restart –removal on host fs
   - Can be shared across containers
   - Can be re-used for same container (across restarts)
+
+## Arguments & Environment Variables
+
+Docker supports built-time Arguments and runtime environment variables
+
+- Environment variables => ENV
+  - Available inside of Dockerfile & in application code
+  - Set via ENV in Dockerfile or via `--env` on docker run
