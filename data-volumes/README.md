@@ -21,7 +21,7 @@ Volumes are _folders on the host machines_ hard drive which are _mounted_ ("made
 Volumes persist if a container shuts down. If a container (re-)starts and mounts a volume, any data inside of that volume is available in the container.<br />
 A container can write data into a volume and read data from it.
 
-## Types of External Data Storages
+### Types of External Data Storages
 
 <table>
   <thead>
@@ -53,3 +53,21 @@ A container can write data into a volume and read data from it.
 
 **Volume Interactions**<br />
 ![interactions](./docs//interactions.excalidraw.png)
+
+### Quick Overview
+
+- Anonymous Volume => `docker run -v /app/data ...`.
+  - Created specifically for a single container
+  - Survives container shutdown / restart unless `--rm` is used
+  - Can not be shared across containers
+  - Since it’s anonymous, it can’t be re-used (even on same image)
+- Named Volume => `docker run -v data:/app/data ...`.
+  - Created in general – not tied to any specific container
+  - Survives container shutdown / restart –removal via Docker CLI
+  - Can be shared across containers
+  - Can be re-used for same container (across restarts)
+- Bind Mount => `docker run -v /path/to/code:/app/data ...`.
+  - Location on host file system, not tied to any specific container
+  - Survives container shutdown / restart –removal on host fs
+  - Can be shared across containers
+  - Can be re-used for same container (across restarts)
