@@ -76,6 +76,9 @@ A container can write data into a volume and read data from it.
 
 Docker supports built-time Arguments and runtime environment variables
 
+- Arguments => ARG
+  - Available inside of Dockerfile, NOT accessible in CMD or any application code
+  - Set on image build (_docker build_) via `--build-arg`
 - Environment variables => ENV
   - Available inside of Dockerfile & in application code
   - Set via ENV in Dockerfile or via `--env` on docker run
