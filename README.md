@@ -9,6 +9,9 @@ Learn Docker, Docker Compose, Multi-Container Projects, Deployment and all about
 🚀 Develop, deploy, and scale applications with Docker and Kubernetes!
 
 **Table of Content**
-| Module | Description | Resources |
-| ---| --- | --- |
-| Images & Containers | The Core Building Blocks | [Folder](./images-containers) & [GitHub Commits](https://github.com/ThomasCode92/docker-k8s-practical-guide/commits/images-containers/) |
+
+| Module              | Description                          | Resources                                                                                                                                                                                            |
+| ------------------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Images & Containers | The Core Building Blocks             | [Folder](./images-containers) & [GitHub Commits](https://github.com/ThomasCode92/docker-k8s-practical-guide/commits/images-containers/)<br />[Cheat sheet](./images-containers/docs/cheat-sheet.pdf) |
+| Volumes             | Managing Data & Working with Volumes | [Folder](./data-volumes/) & [GitHub Commits](https://github.com/ThomasCode92/docker-k8s-practical-guide/commits/data-volumes)<br />[Cheat sheet](./data-volumes/docs/cheat-sheet.pdf)                |
+| Networking          | (Cross-)Container Communication      | [Folder](./networking/) & [GitHub Commits](https://github.com/ThomasCode92/docker-k8s-practical-guide/commits/networking)                                                                            |

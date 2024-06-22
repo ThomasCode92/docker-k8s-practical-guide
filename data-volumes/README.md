@@ -52,6 +52,8 @@ A container can write data into a volume and read data from it.
 </table>
 
 **Volume Interactions**<br />
+Containers can read + write data. Volumes can help with data storage, Bind Mounts can help with direct container interaction.
+
 ![interactions](./docs//interactions.excalidraw.png)
 
 ### Quick Overview
