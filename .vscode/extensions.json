@@ -3,6 +3,7 @@
     "ms-azuretools.vscode-docker",
     "ms-kubernetes-tools.vscode-kubernetes-tools",
     "pomdtr.excalidraw-editor",
-    "streetsidesoftware.code-spell-checker"
+    "streetsidesoftware.code-spell-checker",
+    "humao.rest-client"
   ]
 }
