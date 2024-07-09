@@ -67,7 +67,7 @@ To start a container in interactive mode, use the _-it_ flag. This flag allows y
 | Can be **analyzed** | _docker image inspect_ | Can be **listed** | _docker ps, docker ps -a_ |
 | Can be **removed** | _docker rmi, docker prune_ | Can be **removed** | _docker rm_ |
 
-Add `--help`to see all options. A more complete list of commands can be found in [this sheet sheet](./docs/sheet-sheet.pdf).
+Add `--help`to see all options. A more complete list of commands can be found in [this cheat sheet](./docs/cheat-sheet.pdf).
 
 ## Docker Hub
 
