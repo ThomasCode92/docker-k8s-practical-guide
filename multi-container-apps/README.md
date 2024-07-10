@@ -13,7 +13,16 @@
 Create network: `docker network create goals-net`
 
 **MongoDB Database**<br />
-Start Container: `docker run --network goals-net --rm -d --name mongodb mongo`
+
+```bash
+  docker run \
+    --network goals-net \
+    -v data:/data/db \
+    -e MONGO_INITDB_ROOT_USERNAME=user \
+    -e MONGO_INITDB_ROOT_PASSWORD=secret \
+    --rm -d --name mongodb \
+    mongo
+```
 
 **NodeJS Backend**<br />
 Build Image: `docker build -t goals-node .`<br />
