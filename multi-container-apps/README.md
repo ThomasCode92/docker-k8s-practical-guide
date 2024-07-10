@@ -15,3 +15,7 @@
 **NodeJS Backend**<br />
 `docker build -t goals-node .`<br />
 `docker run -p 80:80 --rm -d --name goals-backend goals-node`
+
+**ReactJS Frontend**<br />
+`docker build -t goals-react .`<br />
+`docker run -p 3000:3000 --rm -d --name goals-frontend goals-react`
