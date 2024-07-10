@@ -25,8 +25,22 @@ Create network: `docker network create goals-net`
 ```
 
 **NodeJS Backend**<br />
-Build Image: `docker build -t goals-node .`<br />
-Start Container: `docker run --network goals-net -p 80:80 --rm -d --name goals-backend goals-node`
+
+```bash
+  # Build Image
+  docker build -t goals-node .
+
+  # Run Container
+  docker run \
+    --network goals-net \
+    -v logs:/app/logs \
+    -v $(pwd):/app \
+    -v /app/node_modules \
+    -e MONGODB_USERNAME=user \
+    -p 80:80 \
+    --rm -d --name goals-backend \
+    goals-node
+```
 
 **ReactJS Frontend**<br />
 Build Image: `docker build -t goals-react .`<br />
