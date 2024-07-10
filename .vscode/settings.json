@@ -6,6 +6,7 @@
     "data-volumes": "docker",
     "images-containers": "docker",
     "networking": "docker",
+    "multi-container-apps": "docker",
     "node-app": "node",
     "python-app": "python"
   },
