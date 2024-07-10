@@ -11,3 +11,7 @@
 
 **MongoDB Database**<br />
 `docker run -p 27017:27017 --rm -d --name mongodb mongo`
+
+**NodeJS Backend**<br />
+`docker build -t goals-node .`<br />
+`docker run -p 80:80 --rm -d --name goals-backend goals-node`
