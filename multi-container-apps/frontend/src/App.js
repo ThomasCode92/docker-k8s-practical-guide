@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
-import GoalInput from './components/goals/GoalInput';
 import CourseGoals from './components/goals/CourseGoals';
+import GoalInput from './components/goals/GoalInput';
 import ErrorAlert from './components/UI/ErrorAlert';
 
 function App() {
@@ -45,8 +45,8 @@ function App() {
           text: goalText,
         }),
         headers: {
-          'Content-Type': 'application/json'
-        }
+          'Content-Type': 'application/json',
+        },
       });
 
       const resData = await response.json();
@@ -55,7 +55,7 @@ function App() {
         throw new Error(resData.message || 'Adding the goal failed.');
       }
 
-      setLoadedGoals((prevGoals) => {
+      setLoadedGoals(prevGoals => {
         const updatedGoals = [
           {
             id: resData.goal.id,
@@ -88,8 +88,8 @@ function App() {
         throw new Error(resData.message || 'Deleting the goal failed.');
       }
 
-      setLoadedGoals((prevGoals) => {
-        const updatedGoals = prevGoals.filter((goal) => goal.id !== goalId);
+      setLoadedGoals(prevGoals => {
+        const updatedGoals = prevGoals.filter(goal => goal.id !== goalId);
         return updatedGoals;
       });
     } catch (err) {

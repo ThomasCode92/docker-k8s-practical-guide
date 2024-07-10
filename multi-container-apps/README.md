@@ -43,5 +43,15 @@ Create network: `docker network create goals-net`
 ```
 
 **ReactJS Frontend**<br />
-Build Image: `docker build -t goals-react .`<br />
-Start Container: `docker run -p 3000:3000 --rm -d --name goals-frontend goals-react`
+
+```bash
+  # Build Image
+  docker build -t goals-react .
+
+  # Run Container
+  docker run \
+    -v $(pwd)/src:/app/src \
+    -p 3000:3000 \
+    --rm -d --name goals-frontend \
+    goals-react
+```
