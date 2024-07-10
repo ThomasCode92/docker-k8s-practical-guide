@@ -8,3 +8,6 @@
 ## Target Application
 
 ![target application](./docs/target.excalidraw.png)
+
+**MongoDB Database**<br />
+`docker run -p 27017:27017 --rm -d --name mongodb mongo`
