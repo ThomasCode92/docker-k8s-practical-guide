@@ -23,8 +23,17 @@ services:
       - goals-net
     depends_on:
       - mongodb
-
-  # frontend:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./frontend/src:/app/src
+      - /app/node_modules
+    networks:
+      - goals-net
 
 volumes:
   data:
