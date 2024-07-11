@@ -7,6 +7,7 @@ services:
       - ./env/mongodb.env
     networks:
       - goals-net
+    container_name: mongodb
   backend:
     build:
       context: ./backend
@@ -21,6 +22,7 @@ services:
       - ./env/backend.env
     networks:
       - goals-net
+    container_name: goals-backend
     depends_on:
       - mongodb
   frontend:
@@ -34,6 +36,7 @@ services:
       - /app/node_modules
     networks:
       - goals-net
+    container_name: goals-frontend
 
 volumes:
   data:
