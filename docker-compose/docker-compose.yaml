@@ -1,0 +1,18 @@
+services:
+  mongodb:
+    image: mongo
+    volumes:
+      - data:/data/db
+    env_file:
+      - ./env/mongodb.env
+    networks:
+      - goals-net
+  # backend:
+
+  # frontend:
+
+volumes:
+  data:
+
+networks:
+  goals-net:
