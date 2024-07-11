@@ -7,6 +7,7 @@
     "images-containers": "docker",
     "networking": "docker",
     "multi-container-apps": "docker",
+    "docker-compose": "docker",
     "node-app": "node",
     "python-app": "python"
   },
