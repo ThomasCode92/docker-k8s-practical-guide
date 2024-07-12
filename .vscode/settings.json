@@ -9,6 +9,7 @@
     "multi-container-apps": "docker",
     "docker-compose": "docker",
     "utility-containers": "docker",
+    "laravel-setup": "php",
     "node-app": "node",
     "python-app": "python"
   },
