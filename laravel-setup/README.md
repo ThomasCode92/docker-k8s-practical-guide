@@ -2,3 +2,7 @@
 
 **Practice: A Laravel & PHP Setup**<br />
 Images, Container, Compose - All in Action
+
+## Target Setup
+
+![target application](./docs/target.excalidraw.png)
