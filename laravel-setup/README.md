@@ -10,23 +10,20 @@ Images, Container, Compose - All in Action
 **Create the Laravel Setup**<br />
 Run the following commands to start the necessary containers for building the target application.
 
-1. **Create `src` folder**<br />
-   `mkdir src`
-
-2. **Create and Start a Laravel Project**<br />
+1. **Create and Start a Laravel Project**<br />
 
    ```bash
       # Create a Laravel Project
       docker compose run --rm composer create-project --prefer-dist laravel/laravel .
 
-      # Change Permissions
+      # Change file permissions (of the created src folder)
       sudo chmod -R o+w src/storage src/bootstrap/cache
 
       # Start the Application
       docker compose up -d server
    ```
 
-3. **Use MySQL Database**<br />
+2. **Use MySQL Database**<br />
    To switch from the default _SQLite_ database to a _MySQL_ database in a Laravel project, follow these steps.<br />
    First, open theOpen the `src/.env` file and update the database connection variables as follows:
    ```bash
