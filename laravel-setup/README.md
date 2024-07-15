@@ -12,6 +12,7 @@ Run the following commands to start the necessary containers for building the ta
 
 1. **Create `src` folder**<br />
    `mkdir src`
+
 2. **Create and Start a Laravel Project**<br />
 
    ```bash
@@ -23,4 +24,22 @@ Run the following commands to start the necessary containers for building the ta
 
       # Start the Application
       docker compose up -d server
+   ```
+
+3. **Use MySQL Database**<br />
+   To switch from the default _SQLite_ database to a _MySQL_ database in a Laravel project, follow these steps.<br />
+   First, open theOpen the `src/.env` file and update the database connection variables as follows:
+   ```bash
+      DB_CONNECTION=mysql
+      DB_HOST=mysql
+      DB_PORT=3306
+      DB_DATABASE=homestead
+      DB_USERNAME=homestead
+      DB_PASSWORD=secret
+      DB_COLLATION=utf8mb4_unicode_ci
+   ```
+   Next, use the following Docker Compose commands to run the Laravel migrations and cache the views:
+   ```bash
+      docker compose run --rm artisan migrate
+      docker compose run --rm artisan view:cache
    ```
