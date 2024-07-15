@@ -10,7 +10,17 @@ Images, Container, Compose - All in Action
 **Create the Laravel Setup**<br />
 Run the following commands to start the necessary containers for building the target application.
 
-1. Create `src` folder<br />
+1. **Create `src` folder**<br />
    `mkdir src`
-2. Create a Laravel App<br />
-   `docker compose run --rm composer create-project --prefer-dist laravel/laravel .`
+2. **Create and Start a Laravel Project**<br />
+
+   ```bash
+      # Create a Laravel Project
+      docker compose run --rm composer create-project --prefer-dist laravel/laravel .
+
+      # Change Permissions
+      sudo chmod -R o+w src/storage src/bootstrap/cache
+
+      # Start the Application
+      docker compose up -d server
+   ```
