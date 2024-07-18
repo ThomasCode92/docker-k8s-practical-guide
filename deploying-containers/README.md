@@ -35,6 +35,12 @@ This is are the necessary steps:
 2.  Configure security group to expose all required ports to WWW
 3.  Connect to instance (SSH), install Docker and run container
 
+| Advantages                                                      | Disadvantages                                        |
+| --------------------------------------------------------------- | ---------------------------------------------------- |
+| Only Docker needs to be installed (no other runtimes or tools!) | Keep essential software updated                      |
+| Uploading “source code” is very easy                            | Manage network and security groups/ firewall         |
+| Exact same app and environment as on a local machine            | SSHing into the machine to manage it can be annoying |
+
 ## Useful Resources
 
 - [Amazon Web Services - Home Page](https://aws.amazon.com/)
