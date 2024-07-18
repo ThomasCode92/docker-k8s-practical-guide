@@ -12,7 +12,8 @@
     "laravel-setup": "php",
     "deploying-containers": "docker",
     "node-app": "node",
-    "python-app": "python"
+    "python-app": "python",
+    "aws-ec2": "aws"
   },
 
   // IDE Config
