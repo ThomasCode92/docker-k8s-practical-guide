@@ -10,6 +10,7 @@
     "docker-compose": "docker",
     "utility-containers": "docker",
     "laravel-setup": "php",
+    "deploying-containers": "docker",
     "node-app": "node",
     "python-app": "python"
   },
