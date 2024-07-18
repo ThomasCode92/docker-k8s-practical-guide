@@ -34,3 +34,10 @@ This is are the necessary steps:
 1.  Create and launch EC2 instance, VPC and security group
 2.  Configure security group to expose all required ports to WWW
 3.  Connect to instance (SSH), install Docker and run container
+
+## Useful Resources
+
+- [Amazon Web Services - Home Page](https://aws.amazon.com/)
+- [Amazon Web Services - Documentation](https://docs.aws.amazon.com/)
+- [Amazon EC2 - Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
+- [Getting Started with AWS](https://academind.com/tutorials/aws-the-basics)
