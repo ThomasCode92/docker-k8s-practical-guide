@@ -41,6 +41,8 @@ This is are the necessary steps:
 | Uploading “source code” is very easy                            | Manage network and security groups/ firewall         |
 | Exact same app and environment as on a local machine            | SSHing into the machine to manage it can be annoying |
 
+Remote machines (like _AWS EC2_) require creation, management, updates, monitoring, and scaling. They are best suited for experienced admins or cloud experts.<br />Managed remote machines, like AWS ECS, handle these tasks automatically. This simplifies monitoring and scaling, ideal for straightforward app or container deployment.
+
 ## Useful Resources
 
 - [Amazon Web Services - Home Page](https://aws.amazon.com/)
