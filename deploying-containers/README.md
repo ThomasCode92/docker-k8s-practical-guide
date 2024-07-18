@@ -16,3 +16,10 @@ _What works on your machine (in a containter) will also work after deployment!_<
 - Containerized apps might need a build step (e.g. React apps)
 - Multi-Container projects might need to be split (or should be split) across multiple hosts/ remote machines
 - Trade-offs between control and responsibility might be worth it
+
+## Basic Example - Standalone NodeJS App
+
+Just NodeJS, no database, nothing else => one image & container.<br />
+**Possible Deployment Approach:** Install Docker on a remote host (e.g. via SSH), push and pull image, run container based on image on remote host.<br />There are hundreds and thousands of Docker-supporting hosting providers out there. The 3 major ones are Amazon Web Services, Microsoft Azure and Google Cloud.
+
+![basic-example](./docs/basic-example.excalidraw.png)
