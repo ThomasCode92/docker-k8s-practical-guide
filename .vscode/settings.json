@@ -13,7 +13,8 @@
     "deploying-containers": "docker",
     "node-app": "node",
     "python-app": "python",
-    "aws-ec2": "aws"
+    "aws-ec2": "aws",
+    "aws-ecs": "aws"
   },
 
   // IDE Config
