@@ -45,7 +45,12 @@ This is are the necessary steps:
 
 Remote machines (like _AWS EC2_) require creation, management, updates, monitoring, and scaling. They are best suited for experienced admins or cloud experts.<br />Managed remote machines, like AWS ECS, handle these tasks automatically. This simplifies monitoring and scaling, ideal for straightforward app or container deployment.
 
+**Target Application:**<br />
 A backend implemented in NodeJS with a MongoDB database, alongside a ReactJS frontend.<br />
+
+### A Single ECS Task for both the Backend and the Database
+
+![ECS with BE and DB](./docs/multi-container-1.excalidraw.png)
 
 ## Useful Resources
 
