@@ -58,6 +58,9 @@ Managing database containers is possible, but there are challenges to consider. 
 
 ![ECS with BE and FE](./docs/multi-container-2.excalidraw.png)
 
+**Apps with Development Servers & Build steps**<br />
+Some apps or projects require a build step, such as an optimization script, which needs to be executed after development but before deployment. It's important to note that the development setup is not the same as the production setup. For example, a ReactJS app uses a live-reloading development server and unoptimized or unsupported JavaScript features during development. In contrast, the build step or script ensures there is no attached server and produces optimized, fully browser-compatible code.
+
 ## Useful Resources
 
 - [Amazon Web Services - Home Page](https://aws.amazon.com/)
