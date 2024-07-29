@@ -54,6 +54,10 @@ A backend implemented in NodeJS with a MongoDB database, alongside a ReactJS fro
 
 Managing database containers is possible, but there are challenges to consider. Scaling and maintaining availability can be difficult, performance may degrade during traffic spikes, and handling backups and security can be complex. Using a managed database service such as _AWS RDS_ or _MongoDB Atlas_ can alleviate these issues.
 
+### One ECS Task for both the Backend and Frontend
+
+![ECS with BE and FE](./docs/multi-container-2.excalidraw.png)
+
 ## Useful Resources
 
 - [Amazon Web Services - Home Page](https://aws.amazon.com/)
