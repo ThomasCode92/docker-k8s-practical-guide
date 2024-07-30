@@ -61,6 +61,9 @@ Managing database containers is possible, but there are challenges to consider. 
 **Apps with Development Servers & Build steps**<br />
 Some apps or projects require a build step, such as an optimization script, which needs to be executed after development but before deployment. It's important to note that the development setup is not the same as the production setup. For example, a ReactJS app uses a live-reloading development server and unoptimized or unsupported JavaScript features during development. In contrast, the build step or script ensures there is no attached server and produces optimized, fully browser-compatible code.
 
+**Multi-Stage Builds**<br />
+Multi-stage builds in Docker allow you to use a single Dockerfile to define multiple build and setup steps, referred to as "stages." Each stage can copy results, such as created files and folders, from the previous stages. This approach offers flexibility, as you can either build the complete image or select individual stages as needed.
+
 ## Useful Resources
 
 - [Amazon Web Services - Home Page](https://aws.amazon.com/)
