@@ -70,9 +70,19 @@ Both the Frontend and Backend expose port 80, which causes a conflict when using
 
 ![ECS Tasks for BE and FE](./docs/multi-container-3.excalidraw.png)
 
+## Can it Better?
+
+- Containers enable the encapsulation of application code and its environment for both development and production.
+- Considering production requirements demands building containers and application code with additional scenarios in mind, such as multi-stage builds.
+- When Docker and remote machines are not managed manually, it is essential to adhere to the tools and rules set by the managed service.
+- Different cloud providers impose different rules.
+
+Depending on the provider, implementing features like load balancing can be challenging, making **_Kubernetes_** a preferred solution.
+
 ## Useful Resources
 
 - [Amazon Web Services - Home Page](https://aws.amazon.com/)
 - [Amazon Web Services - Documentation](https://docs.aws.amazon.com/)
-- [Amazon EC2 - Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
+- [Amazon EC2 - Documentation](https://docs.aws.amazon.com/ec2)
+- [Amazon ECS - Documentation](https://docs.aws.amazon.com/ecs/)
 - [Getting Started with AWS](https://academind.com/tutorials/aws-the-basics)
