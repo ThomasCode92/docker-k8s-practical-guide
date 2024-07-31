@@ -64,6 +64,12 @@ Some apps or projects require a build step, such as an optimization script, whic
 **Multi-Stage Builds**<br />
 Multi-stage builds in Docker allow you to use a single Dockerfile to define multiple build and setup steps, referred to as "stages." Each stage can copy results, such as created files and folders, from the previous stages. This approach offers flexibility, as you can either build the complete image or select individual stages as needed.
 
+### Separate ECS Tasks for Backend and Frontend
+
+Both the Frontend and Backend expose port 80, which causes a conflict when using a single ECS Task. A common solution is to use two separate ECS Tasks.
+
+![ECS Tasks for BE and FE](./docs/multi-container-3.excalidraw.png)
+
 ## Useful Resources
 
 - [Amazon Web Services - Home Page](https://aws.amazon.com/)
