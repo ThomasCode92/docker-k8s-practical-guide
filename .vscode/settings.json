@@ -10,8 +10,11 @@
     "docker-compose": "docker",
     "utility-containers": "docker",
     "laravel-setup": "php",
+    "deploying-containers": "docker",
     "node-app": "node",
-    "python-app": "python"
+    "python-app": "python",
+    "aws-ec2": "aws",
+    "aws-ecs": "aws"
   },
 
   // IDE Config
