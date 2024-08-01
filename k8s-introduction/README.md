@@ -23,3 +23,13 @@ Services like _AWS ECS_ provide features such as container health checks, automa
 Kubernetes is an open-source system (and de-facto standard) for orchestrating container deployments. It offers features like automatic deployment, scaling & load balancing, management,...
 
 ![why k8s](./docs/why-k8s.excalidraw.png)
+
+**What Kubernetes IS and IS NOT**<br />
+
+- It’s not a cloud service provider - _It’s an open source project_
+- It’s not a service by, or restricted to, a cloud service provider - _It can be used with any provider_
+- It’s not just a software you run on some machine - _It’s a collection of concepts and tools_
+- It’s not an alternative to Docker - _It works with (Docker) containers_
+- It’s not a paid service - _It’s a free open-source project_
+
+_Kubernetes is like Docker-Compose for multiple machine._
