@@ -11,6 +11,7 @@
     "utility-containers": "docker",
     "laravel-setup": "php",
     "deploying-containers": "docker",
+    "k8s-introduction": "kubernetes",
     "node-app": "node",
     "python-app": "python",
     "aws-ec2": "aws",
