@@ -53,3 +53,7 @@ _Kubernetes is like Docker-Compose for multiple machine._
 ### Worker Nodes
 
 ![worker nodes](./docs/worker-nodes.excalidraw.png)
+
+### Master Node
+
+![master node](./docs/master-node.excalidraw.png)
