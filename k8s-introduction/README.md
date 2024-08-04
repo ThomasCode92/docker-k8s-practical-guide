@@ -57,3 +57,19 @@ _Kubernetes is like Docker-Compose for multiple machine._
 ### Master Node
 
 ![master node](./docs/master-node.excalidraw.png)
+
+## Core Concepts
+
+**Cluster:**<br />A set of _Node_ machines which are running the _Containerized_ Application (_Worker Nodes_) or control other Nodes (_Master Node_).<br />
+
+**Nodes:**:<br />_Physical or virtual machine_ with a certain hardware capacity which hosts _one or multiple Pods_ and _communicates_ with the Cluster.<br />
+
+**Master Node:**<br />Cluster _Control Plane, managing the Pods_ across Worker Nodes.<br />
+
+**Worker Node:**<br />Hosts Pods, _running App Containers_ (+ _resources_).<br />
+
+**Pods:**<br />Pods _hold the actual running App Containers_ + their _required resources_ (e.g. volumes).<br />
+
+**Containers:**<br />Normal (Docker) Containers.<br />
+
+**Services:**<br />A _logical set (group) of Pods_ with a unique, Pod- and Container-_independent IP address_.
