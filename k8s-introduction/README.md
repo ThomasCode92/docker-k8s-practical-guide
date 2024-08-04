@@ -49,3 +49,7 @@ _Kubernetes is like Docker-Compose for multiple machine._
 - Create the Cluster and the Node Instances (Worker + Master Nodes)
 - Setup API Server, kubelet and other Kubernetes services / software on Nodes
 - Create other (cloud) provider resources that might be needed (e.g. Load Balancer, Filesystems)
+
+### Worker Nodes
+
+![worker nodes](./docs/worker-nodes.excalidraw.png)
