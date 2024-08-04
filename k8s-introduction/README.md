@@ -33,3 +33,7 @@ Kubernetes is an open-source system (and de-facto standard) for orchestrating co
 - It’s not a paid service - _It’s a free open-source project_
 
 _Kubernetes is like Docker-Compose for multiple machine._
+
+## Kubernetes Architecture
+
+![core concepts](./docs/core-concepts.excalidraw.png)
