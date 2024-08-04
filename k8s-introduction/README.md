@@ -37,3 +37,15 @@ _Kubernetes is like Docker-Compose for multiple machine._
 ## Kubernetes Architecture
 
 ![core concepts](./docs/core-concepts.excalidraw.png)
+
+**What Kubernetes Will Do:**<br />
+
+- Create objects (e.g. Pods) and manage them
+- Monitor Pods and re-create them, scale Pods etc.
+- Kubernetes utilizes the provided (cloud) resources to apply your configuration / goal
+
+**What Needs To Be Done / Setup:**<br >
+
+- Create the Cluster and the Node Instances (Worker + Master Nodes)
+- Setup API Server, kubelet and other Kubernetes services / software on Nodes
+- Create other (cloud) provider resources that might be needed (e.g. Load Balancer, Filesystems)
