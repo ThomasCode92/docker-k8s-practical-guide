@@ -34,16 +34,19 @@ The Kubernetes command-line tool: [kubectl](https://kubernetes.io/docs/tasks/too
 ## Imperative Approach
 
 ```bash
-# create an image (e.g. kub-first-app) and push it to docker hub
+## create an image (e.g. kub-first-app) and push it to docker hub
 docker build -t kub-first-app .
 docker tag kub-first-app <docker_hub>/kub-first-app
 docker push <docker_hub>/kub-first-app
 
-# create a deployment
+## create a deployment
 kubectl create deployment first-app --image=<docker_hub>/kub-first-app
+kubectl get pods              # view all pods
 
-# view all pods
-kubectl get pods
+## create a service
+kubectl expose deployment first-app --type=LoadBalancer --port=8080
+kubectl get services          # view all services
+minikube service first-app    # open the application
 ```
 
 ### Behind the Scenes
