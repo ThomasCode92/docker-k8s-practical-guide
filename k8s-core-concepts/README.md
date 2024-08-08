@@ -31,7 +31,9 @@ The Kubernetes command-line tool: [kubectl](https://kubernetes.io/docs/tasks/too
 
 ## Kubernetes in Action
 
-## Imperative Approach
+### Imperative Approach
+
+Individual commands are executed to trigger certain Kubernetes actions. It's comparable to using `docker run` only.
 
 ```bash
 ## create an image (e.g. kub-first-app) and push it to docker hub
@@ -52,6 +54,10 @@ minikube service first-app    # open the application
 ### an image with a new tag needs to be pushed first
 kubectl set image deployments/first-app kub-first-app=<docker_hub>/kub-first-app:tag
 ```
+
+### Declarative Approach
+
+A config file is defined and applied to change the desired state. Comparable to using `docker compose` with compose files.
 
 ### Behind the Scenes
 
