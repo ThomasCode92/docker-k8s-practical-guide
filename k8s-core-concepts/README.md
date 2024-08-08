@@ -20,3 +20,7 @@ The Kubernetes command-line tool: [kubectl](https://kubernetes.io/docs/tasks/too
 ### The "Pod" Object
 
 ![pod objects](./docs/pod.excalidraw.png)
+
+### The "Deployment" Object
+
+![deployment object](./docs/deployment.excalidraw.png)
