@@ -25,6 +25,8 @@ The Kubernetes command-line tool: [kubectl](https://kubernetes.io/docs/tasks/too
 
 ![deployment object](./docs/deployment.excalidraw.png)
 
+## Kubernetes in Action
+
 ## Imperative Approach
 
 ```bash
@@ -39,3 +41,7 @@ kubectl create deployment first-app --image=<docker_hub>/kub-first-app
 # view all pods
 kubectl get pods
 ```
+
+### Behind the Scenes
+
+![behind the scenes](./docs/behind-the-scenes.excalidraw.png)
