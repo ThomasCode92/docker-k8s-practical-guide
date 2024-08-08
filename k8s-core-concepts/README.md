@@ -25,6 +25,10 @@ The Kubernetes command-line tool: [kubectl](https://kubernetes.io/docs/tasks/too
 
 ![deployment object](./docs/deployment.excalidraw.png)
 
+### The "Service" Object
+
+![service object](./docs/service.excalidraw.png)
+
 ## Kubernetes in Action
 
 ## Imperative Approach
