@@ -24,3 +24,18 @@ The Kubernetes command-line tool: [kubectl](https://kubernetes.io/docs/tasks/too
 ### The "Deployment" Object
 
 ![deployment object](./docs/deployment.excalidraw.png)
+
+## Imperative Approach
+
+```bash
+# create an image (e.g. kub-first-app) and push it to docker hub
+docker build -t kub-first-app .
+docker tag kub-first-app <docker_hub>/kub-first-app
+docker push <docker_hub>/kub-first-app
+
+# create a deployment
+kubectl create deployment first-app --image=<docker_hub>/kub-first-app
+
+# view all pods
+kubectl get pods
+```
