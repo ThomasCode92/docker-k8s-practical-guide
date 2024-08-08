@@ -47,6 +47,10 @@ kubectl get pods              # view all pods
 kubectl expose deployment first-app --type=LoadBalancer --port=8080
 kubectl get services          # view all services
 minikube service first-app    # open the application
+
+## update deployment
+### an image with a new tag needs to be pushed first
+kubectl set image deployments/first-app kub-first-app=<docker_hub>/kub-first-app:tag
 ```
 
 ### Behind the Scenes
