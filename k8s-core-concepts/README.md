@@ -12,3 +12,11 @@
 
 Setting up a local (development cluster): [minikube](https://minikube.sigs.k8s.io/docs/)<br />
 The Kubernetes command-line tool: [kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
+
+## Kubernetes Objects
+
+![kubernetes objects](./docs/objects.excalidraw.png)
+
+### The "Pod" Object
+
+![pod objects](./docs/pod.excalidraw.png)
