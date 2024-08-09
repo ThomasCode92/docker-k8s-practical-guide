@@ -3,3 +3,12 @@ kind: Deployment
 metadata:
   name: first-app-deployment
 spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: first-app
+    spec:
+      containers:
+        - name: first-nodejs-app
+          image: thomascode92/kub-first-app:latest
