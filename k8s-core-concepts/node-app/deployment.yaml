@@ -2,12 +2,13 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: first-app-deployment
+  labels:
+    group: example-app
 spec:
   replicas: 1
   selector:
-    matchLabels:
-      app: first-app
-      tier: backend
+    matchExpressions:
+      - { key: app, operator: In, values: [first-app] }
   template:
     metadata:
       labels:

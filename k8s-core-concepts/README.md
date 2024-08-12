@@ -59,6 +59,9 @@ kubectl apply -f=deployment.yaml
 
 # delete an object
 kubectl delete -f=deployment.yaml
+
+# delete an object, by selector
+kubectl delete deployments -l group=example-app
 ```
 
 ### Behind the Scenes
