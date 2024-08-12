@@ -36,28 +36,30 @@ The Kubernetes command-line tool: [kubectl](https://kubernetes.io/docs/tasks/too
 Individual commands are executed to trigger certain Kubernetes actions. It's comparable to using `docker run` only.
 
 ```bash
-## create an image (e.g. kub-first-app) and push it to docker hub
-docker build -t kub-first-app .
-docker tag kub-first-app <docker_hub>/kub-first-app
-docker push <docker_hub>/kub-first-app
-
-## create a deployment
-kubectl create deployment first-app --image=<docker_hub>/kub-first-app
+# create a deployment
+kubectl create deployment first-app --image=<docker_hub>/<image>
 kubectl get pods              # view all pods
 
-## create a service
+# create a service
 kubectl expose deployment first-app --type=LoadBalancer --port=8080
 kubectl get services          # view all services
 minikube service first-app    # open the application
 
-## update deployment
-### an image with a new tag needs to be pushed first
-kubectl set image deployments/first-app kub-first-app=<docker_hub>/kub-first-app:tag
+# update deployment
+kubectl set image deployments/first-app kub-first-app=<docker_hub>/<image>
 ```
 
 ### Declarative Approach
 
 A config file is defined and applied to change the desired state. Comparable to using `docker compose` with compose files.
+
+```bash
+# apply a config file
+kubectl apply -f=deployment.yaml
+
+# delete an object
+kubectl delete -f=deployment.yaml
+```
 
 ### Behind the Scenes
 
