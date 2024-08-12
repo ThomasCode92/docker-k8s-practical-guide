@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
         - name: first-nodejs-app
-          image: thomascode92/kub-first-app:latest
+          image: thomascode92/kub-first-app:0.0.2
+          imagePullPolicy: Always
           livenessProbe:
             httpGet:
               path: /
