@@ -54,13 +54,15 @@ kubectl set image deployments/first-app kub-first-app=<docker_hub>/<image>
 A config file is defined and applied to change the desired state. Comparable to using `docker compose` with compose files.
 
 ```bash
-# apply a config file
-kubectl apply -f=deployment.yaml
+# create a deployment & service
+kubectl apply -f=deployment.yaml -f=service.yaml
+kubectl get services          # view all services
+minikube service first-app    # open the application
 
-# delete an object
+# delete an object (by file)
 kubectl delete -f=deployment.yaml
 
-# delete an object, by selector
+# delete an object (by selector)
 kubectl delete deployments -l group=example-app
 ```
 
