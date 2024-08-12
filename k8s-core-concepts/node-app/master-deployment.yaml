@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: first-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: first-app
+      tier: backend
+  template:
+    metadata:
+      labels:
+        app: first-app
+        tier: backend
+    spec:
+      containers:
+        - name: first-nodejs-app
+          image: thomascode92/kub-first-app:latest
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: first-app-service
+spec:
+  selector:
+    app: first-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer
