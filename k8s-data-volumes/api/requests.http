@@ -1,0 +1,10 @@
+### GET /story
+GET http://localhost:8080/story HTTP/1.1
+
+### POST /story
+POST http://localhost:8080/story HTTP/1.1
+Content-Type: application/json
+
+{
+  "text": "Some text..."
+}
