@@ -1,3 +1,5 @@
+# To utilize the requests in this file with Minikube, execute the following command: minikube tunnel.
+
 ### GET /story
 GET http://localhost:8080/story HTTP/1.1
 
