@@ -23,3 +23,7 @@ Volumes managed by Kubernetes are not exactly the same as volumes managed by Doc
 | Supports many different Drivers and Types       | Basically no Driver / Type Support              |
 | Volumes are not necessarily persistent          | Volumes persist until manually cleared          |
 | Volumes survive Container restarts and removals | Volumes survive Container restarts and removals |
+
+### Persistent Volumes
+
+![persistent volumes](./docs/persistent-volumes.excalidraw.png)
