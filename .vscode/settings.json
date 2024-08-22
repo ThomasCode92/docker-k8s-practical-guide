@@ -18,7 +18,10 @@
     "node-app": "node",
     "python-app": "python",
     "aws-ec2": "aws",
-    "aws-ecs": "aws"
+    "aws-ecs": "aws",
+    "auth-api": "node",
+    "tasks-api": "node",
+    "users-api": "node"
   },
 
   // IDE Config
