@@ -27,3 +27,9 @@ Volumes managed by Kubernetes are not exactly the same as volumes managed by Doc
 ### Persistent Volumes
 
 ![persistent volumes](./docs/persistent-volumes.excalidraw.png)
+
+| "Normal" Volumes                                    | Persistent Volumes                                                   |
+| --------------------------------------------------- | -------------------------------------------------------------------- |
+| Volume is attached to Pod and Pod lifecycle         | Volume is a standalone Cluster<br />resource (NOT attached to a Pod) |
+| Defined and created together with Pod               | Created standalone, claimed via a PVC                                |
+| Repetitive and hard to administer on a global level | Can be defined once and used multiple times                          |
