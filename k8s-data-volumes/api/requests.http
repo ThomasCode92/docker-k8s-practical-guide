@@ -1,0 +1,15 @@
+# To utilize the requests in this file with Minikube, execute the following command: minikube tunnel.
+
+### GET /story
+GET http://localhost:8080/story HTTP/1.1
+
+### GET /error
+GET http://localhost:8080/error HTTP/1.1
+
+### POST /story
+POST http://localhost:8080/story HTTP/1.1
+Content-Type: application/json
+
+{
+  "text": "Some text..."
+}
