@@ -15,6 +15,9 @@ spec:
       containers:
         - name: story
           image: thomascode92/kub-data-demo:latest
+          env:
+            - name: STORY_FOLDER
+              value: story
           volumeMounts:
             - name: story-volume
               mountPath: /app/story
