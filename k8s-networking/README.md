@@ -8,6 +8,4 @@
 
 ## The Target Application
 
-### Architectural Diagram - V1
-
-![diagram v1](./docs/app-v1.excalidraw.png)
+![target app](./docs/target-app.excalidraw.png)
