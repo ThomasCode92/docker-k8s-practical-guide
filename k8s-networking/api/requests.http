@@ -17,3 +17,18 @@ Content-Type: application/json
   "email": "test@tester.com",
   "password": "testers"
 }
+
+
+### GET /tasks
+GET http://localhost:8000/tasks HTTP/1.1
+Authorization: Bearer abc
+
+### POST /tasks
+POST http://localhost:8000/tasks HTTP/1.1
+Authorization: Bearer abc
+Content-Type: application/json
+
+{
+  "title": "A First Task",
+  "text": "Do this, too"
+}
