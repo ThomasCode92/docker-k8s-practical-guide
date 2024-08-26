@@ -14,10 +14,14 @@
     "k8s-introduction": "kubernetes",
     "k8s-core-concepts": "kubernetes",
     "k8s-data-volumes": "kubernetes",
+    "k8s-networking": "kubernetes",
     "node-app": "node",
     "python-app": "python",
     "aws-ec2": "aws",
-    "aws-ecs": "aws"
+    "aws-ecs": "aws",
+    "auth-api": "node",
+    "tasks-api": "node",
+    "users-api": "node"
   },
 
   // IDE Config
@@ -37,5 +41,8 @@
   // Files Specific Config
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[nginx]": {
+    "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
   }
 }
